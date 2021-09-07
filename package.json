@@ -1,0 +1,22 @@
+{
+  "name": "poo_javascript",
+  "version": "1.0.0",
+  "description": "repositorio creado para el curso de programacion orientada a objetos con javaScript en Platzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosVF22/POO_javasCript-course-in-platzi.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "CarlosVF22",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CarlosVF22/POO_javasCript-course-in-platzi/issues"
+  },
+  "homepage": "https://github.com/CarlosVF22/POO_javasCript-course-in-platzi#readme"
+}
