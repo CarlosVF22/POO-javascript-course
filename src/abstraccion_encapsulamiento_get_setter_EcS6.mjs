@@ -1,3 +1,41 @@
+//modulos java script ECMAScript 6
+// Cambiamos la extension del archivo a mjs
+
+//por fuera de la clase
+function videoPlay(id){
+    const urlSecreta = "https://platziultrasecretomasquelanasa.com/" + id;
+    console.log("se esta reproduciendo el video desde la url" + urlSecreta);
+}
+
+function videoStop(){
+    const urlSecreta = "https://platziultrasecretomasquelanasa.com/" + id;
+    console.log("pausamos el video desde la url" + urlSecreta);
+}
+
+class PlatziClass{
+    constructor({
+        name,
+        videoID,
+    }) {
+        this.name =name;
+        this.videoID = videoID;
+    }
+
+    reproducir(){
+        videoPlay(this.videoID);
+    }
+
+    pausar(){
+        videoStop(this.videoID);
+    }
+}
+
+
+
+
+
+
+
 class Course {
     constructor({
         name,
@@ -28,7 +66,18 @@ class SocialMedia{
         username,
     }) {
         this._name = name; 
-        this.username = username;
+        this._username = username;
+    }
+    get name (){
+        return this._name;
+    }
+    
+    set name(newSocialMediaName){
+        if(newSocialMediaName =="pinterest"|| "youtube"||"twitch"||"instagram"||"twitter"||"facebook"){
+            this._name = newSocialMediaName;
+        } else{
+            console.error("Nombre de social media no valido");
+        }
     }
 };
 
@@ -180,6 +229,7 @@ const miguel3 = new Student3({
 
 // Encapsular en javaScript
 // -no permitir la alteracion de metodos y atributos
+//-esconder metodos y stributos (en javascript no es posible)
 // veremos 2 formas de aplicar encapsulamiento en javaScript
 // Getters y setters
 // en el curso de POO intermedio veremos Namespaces y modulos ES6
@@ -189,4 +239,4 @@ const miguel3 = new Student3({
 cursoProgBasica.name;
 
 // Cambiando el nombre
-cursoProgBasica.name = "Curso gatis de programacion basica de platzi";
+cursoProgBasica.name = "Curso gatis de programacion basica de platzi"
